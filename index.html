@@ -15,31 +15,77 @@
           <a href="#" class="brand-logo center">Nomad Trail</a>
         </div>
       </nav>
-            <div class="parallax-container">
-                <div class="parallax"><img src="Circle.jpg"></div>
+            <div class="parallax-container" >
+                <div class="parallax center"><img src="assets/Photos/hawaii_trail.jpg"></div>
+                
+  <div class="row">
+    <form class="col s7 m8">
+      <div class="row">
+     <div class="col s6 m6"></div>
+        <div class="input-field col s6 m6 teal darken-3" >
+          <textarea id="search" class="materialize-textarea"></textarea>
+          <label for="textarea1">Search Here</label>
+        </div>
+      </div>
+    </form>
+  </div>
+        
               </div>
-              <div class="section white">
-                <div class="row container">
-                  <h2 class="header">Parallax</h2>
-                  <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+              <div class="section blue lighten-2">
+                <div class="row container ">
+                  <h2 class="header center">Parallax</h2>
+                  <p class="grey-text center text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
                 </div>
               </div>
               <div class="parallax-container">
-                <div class="parallax"><img src="Circle.jpg"></div>
+                <div class="parallax"><img src="assets/Photos/sunrise_hike.jpg"></div>
+                <div class="row">
+                    <div class="col s3 m3">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="assets/Photos/beach_trail.jpg" style="width: 358px;height: 200px;">
+                          <span class="card-title">Don't forget your camera</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Know for it's spectacular views like this one taken by R Roman, Archly Lane trail in Newport Beach, Cali will not let you down. The views, trail difficulty (4/5) and availability of local food to feast on make it a great half or full day adventure.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class= "col s6 m6"></div>
+                    <div class="col s3 m3">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="assets/Photos/trail_with_ppl.jpg" style="width: 358px;height: 200px;">
+                            <span class="card-title">Miles of Memories</span>
+                          </div>
+                          <div class="card-content">
+                            <p>Calling all photography enthusiasts! Nomad Travels is looking for your favorite family photo.
+                                By sharing your photo, you agree to T&C and could be featured on our site next month. #famous</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#">This is a link</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
               </div>
      
 
 
 
     <!-- <script src="script.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
     
   <script type="text/javascript"> 
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.parallax');
-        var instances = M.Parallax.init(elems, options);
-      });
+       $(document).ready(function(){
+    $('.parallax').parallax();
+  });
     </script>
       <script src="assets/script.js"></script>
       <script src="assets/geolocation.js"></script>
@@ -47,3 +93,5 @@
       <script src="assets/trails.js"></script>
 </body>
 </html>
+
+
