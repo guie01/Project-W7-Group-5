@@ -1,9 +1,25 @@
+body {
+    background-image: url("https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/NP_lake.jpg");
+    width: 100%;
+}
+
 .headerFont {
     font-family: 'Homemade Apple', cursive;
     font-size: 50px;
 }
 
-.welcomeFont {
-    font-family: 'Crete Round', serif;
-    font-size: 25px;
+.welcomeFont, .btn {
+    font-family: 'Gurajada', serif;
+    font-size: 35px;
+    color: white;
+}
+
+.cardTitle {
+    font-family: 'Gurajada', serif;
+    font-size: 35px;
+}
+
+.cardBody {
+    font-family: 'Gurajada', serif;
+    font-size: 20px;
 }
