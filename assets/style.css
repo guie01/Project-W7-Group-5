@@ -1,5 +1,6 @@
 body {
     background-image: url("https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/NP_lake.jpg");
+    width: 100%;
 }
 
 .headerFont {
@@ -21,8 +22,4 @@ body {
 .cardBody {
     font-family: 'Gurajada', serif;
     font-size: 20px;
-}
-
-.carousel-item {
-    width: 100&;
 }
