@@ -9,17 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Homemade+Apple&family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
-    <style>
-      body {
-        background-image: url("assets/Photos/NP_background1.jpg");
-        width: 100%;
-      }
-    </style>
   
     <title>National Parks Adventures</title>
 </head>
 <body>
-
+<div class="bgPhoto" alt="national parks">
   <div class="takeActionContainer">
     <div class="row green darken-4">
       <div class="center input-field col s6">
@@ -31,14 +25,10 @@
 <li>AL</li><li>AK</li><li>AZ</li><li>AR</li><li>CA</li><li>CO</li><li>CT</li><li>DE</li><li>DC</li><li>FL</li><li>GA</li><li>HI</li><li>ID</li><li>IL</li><li>IN</li><li>IA</li><li>KS</li><li>KY</li><li>LA</li><li>ME</li><li>MD</li><li>MA</li><li>MI</li><li>MN</li><li>MS</li><li>MO</li><li>MT</li><li>NE</li><li>NV</li><li>NH</li><li>NJ</li><li>NM</li><li>NY</li><li>NC</li><li>ND</li><li>OH</li><li>OK</li><li>OR</li><li>PA</li><li>PR</li><li>RI</li><li>SC</li><li>SD</li><li>TN</li><li>TX</li><li>UT</li><li>VT</li><li>VA</li><li>WA</li><li>WV</li><li>WI</li><li>WY</li>
 </ul>
      </div>
+     
      <div class="center input-field col s6">
-      <!-- Dropdown Trigger -->
-      <button class="waves-effect brown waves-light btn-large" href="#">Use my location</button>
-
-<!-- Dropdown Structure -->
-<ul id='dropdown1' class='dropdown-content'>
-<li>AL</li><li>AK</li><li>AZ</li><li>AR</li><li>CA</li><li>CO</li><li>CT</li><li>DE</li><li>DC</li><li>FL</li><li>GA</li><li>HI</li><li>ID</li><li>IL</li><li>IN</li><li>IA</li><li>KS</li><li>KY</li><li>LA</li><li>ME</li><li>MD</li><li>MA</li><li>MI</li><li>MN</li><li>MS</li><li>MO</li><li>MT</li><li>NE</li><li>NV</li><li>NH</li><li>NJ</li><li>NM</li><li>NY</li><li>NC</li><li>ND</li><li>OH</li><li>OK</li><li>OR</li><li>PA</li><li>PR</li><li>RI</li><li>SC</li><li>SD</li><li>TN</li><li>TX</li><li>UT</li><li>VT</li><li>VA</li><li>WA</li><li>WV</li><li>WI</li><li>WY</li>
-</ul>
+      <!-- useLocation trigger -->
+      <button class="waves-effect brown waves-light btn-large" id="useMyLoc">Use my location</button>
    </div>
     </div>
   </div>
@@ -51,11 +41,11 @@
                         <div class="col s12 m6">
                             <div class="card green darken-4">
                               <div class="card-content white-text" id = "adventure-results">
-                                <span class="card-title">Park name:</span>
+                                <p class="card-title">Park name:</p>
                                 <p id="address">Address:</p>
-                                <p id="parkHours">Park Hours</p>
                                 <p id="description">Description</p>
                                 <p id="activities">Activities</p>
+                                <a id="parkHours">Website</a>
                             
                               </div>
                              
@@ -66,7 +56,9 @@
                       </div>
                 </div>
               </div>
-            
+     <!-- Close div for bgPhoto        -->
+            </div>
+
               <footer class="page-footer green darken-4">
                 <div class="container">
                   <div class="row">
@@ -77,7 +69,7 @@
                     <div class="col l4 offset-l2 s12">
                       <h5 class="white-text">Credits</h5>
                       <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Matthew Pirmal / Stefanie K Logan</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Matthew Pirmal / Stefanie Logan</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Guillermo Garcia / Richie Roman</a></li>
         
                       </ul>
