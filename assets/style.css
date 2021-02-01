@@ -1,7 +1,15 @@
-body {
-    background-image: url("https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/NP_lake.jpg");
-    width: 100%;
+body, html {
+    height: 100%;
+    margin: 0;
 }
+
+.bgPhoto {
+    background-image: url("assets/Photos/NP_background1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .headerFont {
     font-family: 'Homemade Apple', cursive;
@@ -23,3 +31,4 @@ body {
     font-family: 'Gurajada', serif;
     font-size: 20px;
 }
+
