@@ -1,4 +1,4 @@
-var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=ca&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
+var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=NH&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
 
 var state = $("#searchPlace").val();
 
