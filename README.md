@@ -42,7 +42,7 @@
 * This project enabled us to learn a new styling site & fast! We chose Materialize for it's familiarity with CSS files and its catalog of options. We reveled in the ease of centering items (the word "center" finally centers an element) and we stumbled at times before realizing script placement was key for unfamiliar features.
 
 <a name="api"></a>
-## National Park Service (NPS) API
+## API
 
 * Discovering this particular API was relief to our initial challenges. Our group initially had its eye on a trails API from another website. After extensive testing and realizing the API was not working for others in recent years, we had to quickly regroup and adjust our plans. Lesson learned to ensure the API works well before heading down a project trail.
 
