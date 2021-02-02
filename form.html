@@ -12,8 +12,17 @@
   
     <title>National Parks Adventures</title>
 </head>
+<style>
+  body {
+    background-image: url("assets/Photos/NP_background.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
 <body>
-<div class="bgPhoto" alt="national parks">
+
   <div class="takeActionContainer">
     <div class="row green darken-4">
       <div class="center input-field col s6">
@@ -32,7 +41,7 @@
    </div>
     </div>
   </div>
-
+  <div class="bgPhoto" alt="national parks">
               <div class="section">
                 <div class="row container ">
                     <div class="row">
@@ -41,11 +50,11 @@
                         <div class="col s12 m6">
                             <div class="card green darken-4">
                               <div class="card-content white-text" id = "adventure-results">
-                                <p class="card-title">Park name:</p>
+                                <p class="card-title"></p>
                                 <p id="address">Address:</p>
-                                <p id="description">Description</p>
-                                <p id="activities">Activities</p>
-                                <a id="parkHours">Website</a>
+                                <p id="description">About:</p>
+                                <p id="activities">Activities:</p>
+                                <a id="parkHours">Website:</a>
                             
                               </div>
                              
@@ -92,11 +101,6 @@
   <script type="text/javascript"> 
        $(document).ready(function(){
     $('.parallax').parallax();
-    $('.carousel').carousel();
-    $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
   });
   $('.dropdown-trigger').dropdown();
     </script>
