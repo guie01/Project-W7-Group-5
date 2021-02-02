@@ -1,6 +1,6 @@
 var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=nc&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
 
-var state = $("#searchPlace").val();
+var state = $("#dropdown-content").val();
 
 $.ajax({
     url: queryURL,
@@ -43,7 +43,7 @@ $.ajax({
 
             // Park Address 
             $("#adventure-results").append(parkAddress);
-            parkAddress.attr("id", "address");
+            parkAddress.attr("class", "address");
             parkAddress.text("Address: " + line1 + ". " + cityAddress + ", " + stateShort + ", " + zipCode);
 
 
@@ -69,7 +69,7 @@ $.ajax({
             //Park Description
 
             $("#adventure-results").append(parkDescription);
-            parkDescription.attr("id", "description");
+            parkDescription.attr("class", "description");
             parkDescription.text("Park Description: " + response.data[i].description);
 
 
@@ -85,13 +85,13 @@ $.ajax({
 
             if(activities[activities.length - 1] === " ") activities = activities.substr(1,activities.length - 2);
             $("#adventure-results").append(parkActivies);
-                parkActivies.attr("id", "activities");
+                parkActivies.attr("class", "activities");
                 parkActivies.text("Activities: " + activities.join(", ") + ".");
 
             //Park URL 
 
             $("#adventure-results").append(parkURL);
-            parkURL.attr("id", "park-url");
+            parkURL.attr("class", "park-url");
             parkURL.attr("href", response.data[i].url);
             parkURL.attr("target", "_blank");
             parkURL.text(response.data[i].url);
