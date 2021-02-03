@@ -1,4 +1,4 @@
-var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=co&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
+var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=ct&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
 
 var state = $("#dropdown-content").val();
 
