@@ -1,4 +1,4 @@
-var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=nc&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
+var queryURL = "https://developer.nps.gov/api/v1/parks?stateCode=ri&api_key=vLYmRUPhuQGHTx4RzNCKvg3aovxdPVYFBBIIjKBJ"
 
 var state = $("#dropdown-content").val();
 
@@ -13,26 +13,28 @@ $.ajax({
         console.log(response);
 
         for (i = 0; i < 10; i++) {
-            var parkInfoCont = $("<div>");
-            var parkName = $("<p>");
+            // var parkInfoCont = $("<div>");
+            var parkName = $("<h5>");
             var parkAddress = $("<p>");
             var parkURL = $("<a>");
             //var parkHours = $("#parkHours");
             var parkDescription = $("<p>");
-            var parkActivies = $("<p>");
-
+            var parkActivities = $("<p>");
+           
+            var col = $("<div>").addClass("col s12 m12 center parkCol green darken-4")
+           
 
             //Park Info
-            $("#all-results").append(parkInfoCont);
-            $("#all-results").attr("id", "adventure-results");
+            // $("#all-results").append(parkInfoCont);
+            // $("#all-results").attr("id", "adventure-results");
 
 
             //Park Name
-            $("#adventure-results").append(parkName);
-            parkName.attr("class", "card-title");
-            parkName.text("Park Name: " + response.data[i].fullName);
-
-
+            // $("#adventure-results").append(parkName);
+            // parkName.attr("class", "card-title", "bold");
+            parkName.text(response.data[i].fullName);
+            col.append(parkName);
+            $("#all-results").append(col);
 
             //Park Address Variables 
 
@@ -45,9 +47,10 @@ $.ajax({
             $("#adventure-results").append(parkAddress);
             parkAddress.attr("class", "address");
             parkAddress.text("Address: " + line1 + ". " + cityAddress + ", " + stateShort + ", " + zipCode);
-
-
-
+            col.append(parkAddress);
+            $("#all-results").append(col);
+            
+            
             // TO BE REVIEWED BELOW
             // // Park Hours Variables:
 
@@ -71,7 +74,8 @@ $.ajax({
             $("#adventure-results").append(parkDescription);
             parkDescription.attr("class", "description");
             parkDescription.text("Park Description: " + response.data[i].description);
-
+            col.append(parkDescription);
+            $("#all-results").append(col);
 
             //Park Activities
             var activities = [];
@@ -84,10 +88,11 @@ $.ajax({
             }
 
             if(activities[activities.length - 1] === " ") activities = activities.substr(1,activities.length - 2);
-            $("#adventure-results").append(parkActivies);
-                parkActivies.attr("class", "activities");
-                parkActivies.text("Activities: " + activities.join(", ") + ".");
-
+            $("#adventure-results").append(parkActivities);
+                parkActivities.attr("class", "activities");
+                parkActivities.text("Activities: " + activities.join(", ") + ".");
+                col.append(parkActivities);
+                $("#all-results").append(col);
             //Park URL 
 
             $("#adventure-results").append(parkURL);
@@ -95,7 +100,8 @@ $.ajax({
             parkURL.attr("href", response.data[i].url);
             parkURL.attr("target", "_blank");
             parkURL.text(response.data[i].url);
-
+            col.append(parkURL);
+            $("#all-results").append(col);
 
 
 

@@ -32,3 +32,15 @@ body, html {
     font-size: 20px;
 }
 
+.card-title {
+    font-weight: bold;
+}
+
+.parkCol {
+    margin: 10px;
+    color: white;
+}
+
+/* .hide {
+    display:none;
+} */
