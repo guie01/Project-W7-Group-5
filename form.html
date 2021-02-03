@@ -1,109 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Homemade+Apple&family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css" />
-  
-    <title>National Parks Adventures</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <title>National Parks Adventures</title>
 </head>
 <style>
   body {
     background-image: url("assets/Photos/NP_background.png");
     height: 100%;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
   }
 </style>
+
 <body>
 
   <div class="takeActionContainer">
     <div class="row green darken-4">
       <div class="center input-field col s6">
         <!-- Dropdown Trigger -->
-<a class='dropdown-trigger brown btn-large' href='#' data-target='dropdown1'>Select your state</a>
+        <a class='dropdown-trigger brown btn-large' href='#' data-target='dropdown1'>Select state</a>
 
-<!-- Dropdown Structure -->
-<ul id='dropdown1' class='dropdown-content'>
-<li>AL</li><li>AK</li><li>AZ</li><li>AR</li><li>CA</li><li>CO</li><li>CT</li><li>DE</li><li>DC</li><li>FL</li><li>GA</li><li>HI</li><li>ID</li><li>IL</li><li>IN</li><li>IA</li><li>KS</li><li>KY</li><li>LA</li><li>ME</li><li>MD</li><li>MA</li><li>MI</li><li>MN</li><li>MS</li><li>MO</li><li>MT</li><li>NE</li><li>NV</li><li>NH</li><li>NJ</li><li>NM</li><li>NY</li><li>NC</li><li>ND</li><li>OH</li><li>OK</li><li>OR</li><li>PA</li><li>PR</li><li>RI</li><li>SC</li><li>SD</li><li>TN</li><li>TX</li><li>UT</li><li>VT</li><li>VA</li><li>WA</li><li>WV</li><li>WI</li><li>WY</li>
-</ul>
-     </div>
-     
-     <div class="center input-field col s6">
-      <!-- useLocation trigger -->
-      <button class="waves-effect brown waves-light btn-large" id="useMyLoc">Use my location</button>
-   </div>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li>AL</li>
+          <li>AK</li>
+          <li>AZ</li>
+          <li>AR</li>
+          <li>CA</li>
+          <li>CO</li>
+          <li>CT</li>
+          <li>DE</li>
+          <li>DC</li>
+          <li>FL</li>
+          <li>GA</li>
+          <li>HI</li>
+          <li>ID</li>
+          <li>IL</li>
+          <li>IN</li>
+          <li>IA</li>
+          <li>KS</li>
+          <li>KY</li>
+          <li>LA</li>
+          <li>ME</li>
+          <li>MD</li>
+          <li>MA</li>
+          <li>MI</li>
+          <li>MN</li>
+          <li>MS</li>
+          <li>MO</li>
+          <li>MT</li>
+          <li>NE</li>
+          <li>NV</li>
+          <li>NH</li>
+          <li>NJ</li>
+          <li>NM</li>
+          <li>NY</li>
+          <li>NC</li>
+          <li>ND</li>
+          <li>OH</li>
+          <li>OK</li>
+          <li>OR</li>
+          <li>PA</li>
+          <li>PR</li>
+          <li>RI</li>
+          <li>SC</li>
+          <li>SD</li>
+          <li>TN</li>
+          <li>TX</li>
+          <li>UT</li>
+          <li>VT</li>
+          <li>VA</li>
+          <li>WA</li>
+          <li>WV</li>
+          <li>WI</li>
+          <li>WY</li>
+        </ul>
+      </div>
+
+      <div class="center input-field col s6">
+        <!-- useLocation trigger -->
+        <button class="waves-effect brown waves-light btn-large" id="useMyLoc">By location</button>
+      </div>
     </div>
   </div>
+  <div id="historyRow" class="row green darken-4 hide"></div>
   <div class="bgPhoto" alt="national parks">
-              <div class="section">
-                <div class="row container ">
-                    <div class="row">
 
-                      <!-- RESULTS GO HERE -->
-                        <div class="col s12 m6">
+    <div class="section">
+      <div class="row container ">
+        <div class="row">
+          <!-- RESULTS GO HERE -->
+          <div class="card green darken-4 parkResults center hide" id="all-results">
+          </div>
+        </div>
+      </div>
 
-
-                            <div class=" card green darken-4" id = "all-results">
-
-                          <!-- Card used to be here, now replaced by JQUERY!-->
-
-                             
-   
-                          <div class="col m1"></div>
-                        
-                      </div>
-                </div>
-              </div>
-     <!-- Close div for bgPhoto        -->
+      <div class="section">
+        <div class="row container ">
+          <div class="row">
+            <!-- MAP RESULTS GO HERE -->
+            <div class="card green darken-4 mapResults center hide" id="map-results">
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Close div for bgPhoto        -->
+  </div>
 
-              <footer class="page-footer green darken-4">
-                <div class="container">
-                  <div class="row">
-                    <div class="col l6 s12">
-                      <h5 class="white-text">Information Disclosure</h5>
-                      <p class="grey-text text-lighten-4">Information presented inside this website is provided by National Parks Service. All rights reserved, content subject to change.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                      <h5 class="white-text">Credits</h5>
-                      <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Matthew Pirmal / Stefanie Logan</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Guillermo Garcia / Richie Roman</a></li>
-        
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-copyright">
-                  <div class="container">
-                  © 2021 Copyright
-                  </div>
-                </div>
-              </footer>
+  <footer class="page-footer green darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Information Disclosure</h5>
+          <p class="grey-text text-lighten-4">Information presented inside this website is provided by National
+            Parks Service. All rights reserved, content subject to change.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Credits</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Matthew Pirmal / Stefanie Logan</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Guillermo Garcia / Richie Roman</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright
+      </div>
+    </div>
+  </footer>
 
 
-    <!-- <script src="script.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   
-    
-  <script type="text/javascript"> 
-       $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-  $('.dropdown-trigger').dropdown();
-    </script>
-      <script src="assets/script.js"></script>
-      <script src="assets/geolocation.js"></script>
-      <script src="assets/weather.js"></script>
-      <script src="assets/trails.js"></script>
+  <!-- <script src="script.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+    $('.dropdown-trigger').dropdown();
+  </script>
+  <script src="assets/script.js"></script>
+  <script src="assets/geolocation.js"></script>
+  <script src="assets/weather.js"></script>
+  <script src="assets/trails.js"></script>
 
 </body>
+
 </html>
