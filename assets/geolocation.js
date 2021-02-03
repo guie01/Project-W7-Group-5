@@ -21,10 +21,12 @@ function showMap(position) {
       navigationControlOptions: {
           style:google.maps.NavigationControlStyle.SMALL
       }
+      
   }
   
   var map = new google.maps.Map(document.getElementById("map-results"), myOptions);
   var marker = new google.maps.Marker({ position:latlong, map:map, title:"You are here!" });
+  
 }
 
 function showError(error) {
