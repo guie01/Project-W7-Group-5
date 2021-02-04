@@ -34,7 +34,7 @@
 ** Park description
 ** Park activities
 
-* As a user, I want flexibility in searching by state as well as using my device's location. The latter feature is possible while visiting a park and enhances their experience to have information at their fingertips.
+* As a user, I want to call for my location and render a map. This feature is possible while visiting a park and enhances their experience to have information at their fingertips.
 
 <a name="design"></a>
 ## Site design
@@ -48,12 +48,15 @@
 
 * The NPS API allowed for a plethora of end points and results. Some parks have 5-10 activities while others have over 50. We tapered these results for a more realistic user experience while still providing many options.
 
-* GeoLocation API xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+* GeoLocation API xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 <a name="collaboration"></a>
-## What we're proud of most
+## What we're proud of most in ten words or less:
 
-* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+* Matt: "I love Parallex."
+* Guillermo: "Everything."
+* Richie: "Getting this freakin' Google API to work."
+* Stefanie: "Materialize is my spirit animal, "class = center" means center."
 
 <a name="future"></a>
 ## Future enhancements
