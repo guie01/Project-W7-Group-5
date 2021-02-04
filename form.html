@@ -33,139 +33,136 @@
 
         <!-- Dropdown Structure -->
         <ul id='dropdown1' class='dropdown-content'>
-          <li class="list-item">AL</li>
-          <li class="list-item">AK</li>
-          <li class="list-item">AZ</li>
-          <li class="list-item">AR</li>
-          <li class="list-item">CA</li>
-          <li class="list-item">CO</li>
-          <li class="list-item">CT</li>
-          <li class="list-item">DE</li>
-          <li class="list-item">DC</li>
-          <li class="list-item">FL</li>
-          <li class="list-item">GA</li>
-          <li class="list-item">HI</li>
-          <li class="list-item">ID</li>
-          <li class="list-item">IL</li>
-          <li class="list-item">IN</li>
-          <li class="list-item">IA</li>
-          <li class="list-item">KS</li>
-          <li class="list-item">KY</li>
-          <li class="list-item">LA</li>
-          <li class="list-item">ME</li>
-          <li class="list-item">MD</li>
-          <li class="list-item">MA</li>
-          <li class="list-item">MI</li>
-          <li class="list-item">MN</li>
-          <li class="list-item">MS</li>
-          <li class="list-item">MO</li>
-          <li class="list-item">MT</li>
-          <li class="list-item">NE</li>
-          <li class="list-item">NV</li>
-          <li class="list-item">NH</li>
-          <li class="list-item">NJ</li>
-          <li class="list-item">NM</li>
-          <li class="list-item">NY</li>
-          <li class="list-item">NC</li>
-          <li class="list-item">ND</li>
-          <li class="list-item">OH</li>
-          <li class="list-item">OK</li>
-          <li class="list-item">OR</li>
-          <li class="list-item">PA</li>
-          <li class="list-item">PR</li>
-          <li class="list-item">RI</li>
-          <li class="list-item">SC</li>
-          <li class="list-item">SD</li>
-          <li class="list-item">TN</li>
-          <li class="list-item">TX</li>
-          <li class="list-item">UT</li>
-          <li class="list-item">VT</li>
-          <li class="list-item">VA</li>
-          <li class="list-item">WA</li>
-          <li class="list-item">WV</li>
-          <li class="list-item">WI</li>
-          <li class="list-item">WY</li>
+          <li class = "list-item">AL</li>
+          <li class = "list-item">AK</li>
+          <li class = "list-item">AZ</li>
+          <li class = "list-item">AR</li>
+          <li class = "list-item">CA</li>
+          <li class = "list-item">CO</li>
+          <li class = "list-item">CT</li>
+          <li class = "list-item">DE</li>
+          <li class = "list-item">DC</li>
+          <li class = "list-item">FL</li>
+          <li class = "list-item">GA</li>
+          <li class = "list-item">HI</li>
+          <li class = "list-item">ID</li>
+          <li class = "list-item">IL</li>
+          <li class = "list-item">IN</li>
+          <li class = "list-item">IA</li>
+          <li class = "list-item">KS</li>
+          <li class = "list-item">KY</li>
+          <li class = "list-item">LA</li>
+          <li class = "list-item">ME</li>
+          <li class = "list-item">MD</li>
+          <li class = "list-item">MA</li>
+          <li class = "list-item">MI</li>
+          <li class = "list-item">MN</li>
+          <li class = "list-item">MS</li>
+          <li class = "list-item">MO</li>
+          <li class = "list-item">MT</li>
+          <li class = "list-item">NE</li>
+          <li class = "list-item">NV</li>
+          <li class = "list-item">NH</li>
+          <li class = "list-item">NJ</li>
+          <li class = "list-item">NM</li>
+          <li class = "list-item">NY</li>
+          <li class = "list-item">NC</li>
+          <li class = "list-item">ND</li>
+          <li class = "list-item">OH</li>
+          <li class = "list-item">OK</li>
+          <li class = "list-item">OR</li>
+          <li class = "list-item">PA</li>
+          <li class = "list-item">PR</li>
+          <li class = "list-item">RI</li>
+          <li class = "list-item">SC</li>
+          <li class = "list-item">SD</li>
+          <li class = "list-item">TN</li>
+          <li class = "list-item">TX</li>
+          <li class = "list-item">UT</li>
+          <li class = "list-item">VT</li>
+          <li class = "list-item">VA</li>
+          <li class = "list-item">WA</li>
+          <li class = "list-item">WV</li>
+          <li class = "list-item">WI</li>
+          <li class = "list-item">WY</li>
         </ul>
       </div>
 
       <div class="center input-field col s6">
         <!-- useLocation trigger -->
-        <button type="button" onclick="showPosition();" class="waves-effect brown waves-light btn-large"
-          id="useMyLoc">By location</button>
+        <button type ="button" onclick="showPosition();" class="waves-effect brown waves-light btn-large" id="useMyLoc">By location</button>
+      
       </div>
     </div>
   </div>
-  <div id="historyRow" class="row green darken-4">text</div>
+  <div id="historyRow" class="row center"></div>
   <div class="bgPhoto" alt="national parks">
 
     <div class="section">
       <div class="row container ">
         <div class="row">
           <!-- RESULTS GO HERE -->
-          <div class="center input-field" id="map-results"
-            style="width: 250px; height: 250px;display: block; margin-left: auto;margin-right: auto; "></div>
+          <div class="center input-field" id="map-results" style="width: 250px; height: 250px;display: block; margin-left: auto;margin-right: auto; "></div>
 
           <div class="card green darken-4 parkResults center" id="all-results">
           </div>
         </div>
       </div>
-
+     
+        <div class="container">
+         
+          <!-- MAP RESULTS GO HERE -->
+          <div id="map-results" class="center l12 s4">
+          </div>
       </div>
+
+      <!-- Close div for bgPhoto        -->
     </div>
 
-    <div class="container">
-
-      <!-- MAP RESULTS GO HERE -->
-      <div id="map-results" class="center l12 s4">
-      </div>
-    </div>
-
-    <!-- Close div for bgPhoto -->
-  </div>
-
-  <footer class="page-footer green darken-4">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Information Disclosure</h5>
-          <p class="grey-text text-lighten-4">Information presented inside this website is provided by National
-            Parks Service. All rights reserved, content subject to change.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Credits</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Matthew Pirmal / Stefanie Logan</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Guillermo Garcia / Richie Roman</a></li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-copyright">
+    <footer class="page-footer green darken-4">
       <div class="container">
-        © 2021 Copyright
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Information Disclosure</h5>
+            <p class="grey-text text-lighten-4">Information presented inside this website is provided by National
+              Parks Service. All rights reserved, content subject to change.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Credits</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Matthew Pirmal / Stefanie Logan</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Guillermo Garcia / Richie Roman</a></li>
+
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+
+      <div class="footer-copyright">
+        <div class="container">
+          © 2021 Copyright
+        </div>
+      </div>
+    </footer>
 
 
-  <!-- <script src="script.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.parallax').parallax();
-    });
-    $('.dropdown-trigger').dropdown();
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_V0GhVniiuZnnxeRTlHKGaqjpwuN-9M&libraries=&v=weekly"
-    defer></script>
-  <script src="assets/geolocation.js"></script>
-  <script src="assets/weather.js"></script>
-  <script src="assets/trails.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.parallax').parallax();
+      });
+      $('.dropdown-trigger').dropdown();
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_V0GhVniiuZnnxeRTlHKGaqjpwuN-9M&libraries=&v=weekly"
+      defer></script>
+    <script src="assets/geolocation.js"></script>
+    <script src="assets/weather.js"></script>
+    <script src="assets/trails.js"></script>
 
 </body>
 
