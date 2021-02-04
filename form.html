@@ -90,7 +90,8 @@
 
       <div class="center input-field col s6">
         <!-- useLocation trigger -->
-        <button class="waves-effect brown waves-light btn-large" id="useMyLoc">By location</button>
+        <button type ="button" onclick="showPosition();" class="waves-effect brown waves-light btn-large" id="useMyLoc">By location</button>
+        <div class="center input-field col s6" id="map-results" style="width: 250px; height: 250px; margin: 0 auto;"></div>
       </div>
     </div>
   </div>
@@ -105,12 +106,11 @@
           </div>
         </div>
       </div>
-
      
         <div class="container">
           <!-- MAP RESULTS GO HERE -->
-       <div id="map-results">
-       </div>
+          <div id="map-results">
+          </div>
       </div>
 
       <!-- Close div for bgPhoto        -->
