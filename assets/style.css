@@ -22,6 +22,11 @@ body, html {
     color: white;
 }
 
+.btn-large, .btn-small {
+    font-family: 'Gurajada', serif;
+    font-size: 15px;
+    color: white;
+}
 .cardTitle {
     font-family: 'Gurajada', serif;
     font-size: 35px;
@@ -38,5 +43,14 @@ body, html {
 
 .parkCol {
     margin: 10px;
+    color: white;
+}
+
+.state-btn {
+    margin: 10px;
+}
+
+.page-footer {
+    font-family: 'Gurajada', serif;
     color: white;
 }

@@ -93,9 +93,12 @@
         <button type="button" onclick="showPosition();" class="waves-effect brown waves-light btn-large"
           id="useMyLoc">By location</button>
       </div>
+      <div id="historyRow" class="row green darken-4 center">text</div>
     </div>
+    
   </div>
-  <div id="historyRow" class="row green darken-4">text</div>
+
+  
   <div class="bgPhoto" alt="national parks">
 
     <div class="section">
@@ -103,23 +106,15 @@
         <div class="row">
           <!-- RESULTS GO HERE -->
           <div class="center input-field" id="map-results"
-            style="width: 250px; height: 250px;display: block; margin-left: auto;margin-right: auto; "></div>
-
-          <div class="card green darken-4 parkResults center" id="all-results">
+            style="width: 250px; height: 250px;display: block; margin-left: auto;margin-right: auto; ">
           </div>
+            <div class="card green darken-4 parkResults center" id="all-results">
+            </div>
         </div>
       </div>
-
-      </div>
     </div>
 
-    <div class="container">
-
-      <!-- MAP RESULTS GO HERE -->
-      <div id="map-results" class="center l12 s4">
-      </div>
-    </div>
-
+  </div>
     <!-- Close div for bgPhoto -->
   </div>
 
@@ -164,7 +159,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_V0GhVniiuZnnxeRTlHKGaqjpwuN-9M&libraries=&v=weekly"
     defer></script>
   <script src="assets/geolocation.js"></script>
-  <script src="assets/weather.js"></script>
   <script src="assets/trails.js"></script>
 
 </body>
