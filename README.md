@@ -14,9 +14,11 @@
 <a name="application"></a>
 ## Link to application
 
-* Click here: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+* Click here: https://guie01.github.io/Project-W7-Group-5/
 
-![Homepage image](xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+![Homepage image](https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/index.JPG)
+
+![Form image](https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/form.JPG)
 
 <a name="designers"></a>
 ## Design team
@@ -29,10 +31,10 @@
 
 * As a user, I want to be able to research various National Parks by state and be able to understand...
 ** Park name
-** Park hours
 ** Park address
 ** Park description
 ** Park activities
+** Park website
 
 * As a user, I want to call for my location and render a map. This feature is possible while visiting a park and enhances their experience to have information at their fingertips.
 
@@ -48,12 +50,12 @@
 
 * The NPS API allowed for a plethora of end points and results. Some parks have 5-10 activities while others have over 50. We tapered these results for a more realistic user experience while still providing many options.
 
-* GeoLocation API xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+* GeoLocation API from Google was all Richie's great work. He spent many days working to understand how to not only use a device's location as well as how to render the map img too. 
 
 <a name="collaboration"></a>
 ## What we're proud of most in ten words or less:
 
-* Matt: "I love Parallex."
+* Matt: "I love Parallax."
 * Guillermo: "Everything."
 * Richie: "Getting this freakin' Google API to work."
 * Stefanie: "Materialize is my spirit animal, "class = center" means center."
@@ -62,8 +64,11 @@
 ## Future enhancements
 
 * The sky is the limit, but here are a few of our future features:
+** State drop-down value becomes "FL-Florida"
 ** Search by park name
-** Search by city
+** Add park hours
+** Allow users to search for specific activities
+** Allow users to compare park amenities in a chart
 ** Add weather forecast
 
 <a name="streetcred"></a>
