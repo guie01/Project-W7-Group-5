@@ -16,7 +16,9 @@
 
 * Click here: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-![Homepage image](xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+![Homepage image](https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/index.JPG)
+
+![Results image](https://github.com/guie01/Project-W7-Group-5/blob/main/assets/Photos/form.JPG)
 
 <a name="designers"></a>
 ## Design team
@@ -36,6 +38,8 @@
 
 * As a user, I want to call for my location and render a map. This feature is possible while visiting a park and enhances their experience to have information at their fingertips.
 
+* Recent search history by state is rendered on-screen as the user traverses the API. The search is cleared when window is closed.
+
 <a name="design"></a>
 ## Site design
 
@@ -48,7 +52,7 @@
 
 * The NPS API allowed for a plethora of end points and results. Some parks have 5-10 activities while others have over 50. We tapered these results for a more realistic user experience while still providing many options.
 
-* GeoLocation API xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+* GeoLocation API by Google was a challenge - Richie takes all the credit here for spending hours understanding the API and how to render the map down to the push-pin location details.
 
 <a name="collaboration"></a>
 ## What we're proud of most in ten words or less:
