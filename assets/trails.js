@@ -7,7 +7,7 @@ function renderSearchedStates() {
     for (var i = 0; i < searchedState.length; i++) {
         console.log(searchedState[i]);
         var btn = $("<button>");
-        btn.addClass("state-btn brown btn-small");
+        btn.addClass("state-btn waves-effect brown waves-light btn-small");
         btn.text(searchedState[i]);
         $("#historyRow").append(btn);
     }
