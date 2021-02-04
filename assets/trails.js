@@ -1,5 +1,5 @@
 var searchedState = JSON.parse(localStorage.getItem("searchedState")) || [];
-
+//Creating  buttons
 function renderSearchedStates() {
     $("#historyRow").empty();
 
