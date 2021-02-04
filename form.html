@@ -33,64 +33,65 @@
 
         <!-- Dropdown Structure -->
         <ul id='dropdown1' class='dropdown-content'>
-          <li value="al">AL</li>
-          <li value="ak">AK</li>
-          <li value="az">AZ</li>
-          <li value="ar">AR</li>
-          <li value="ca">CA</li>
-          <li value="co">CO</li>
-          <li value="ct">CT</li>
-          <li value="de">DE</li>
-          <li value="dc">DC</li>
-          <li value="fl">FL</li>
-          <li value="ga">GA</li>
-          <li value="hi">HI</li>
-          <li value="id">ID</li>
-          <li value="il">IL</li>
-          <li value="in">IN</li>
-          <li value="ia">IA</li>
-          <li value="ks">KS</li>
-          <li value="ky">KY</li>
-          <li value="la">LA</li>
-          <li value="me">ME</li>
-          <li value="md">MD</li>
-          <li value="ma">MA</li>
-          <li value="mi">MI</li>
-          <li value="mn">MN</li>
-          <li value="ms">MS</li>
-          <li value="mo">MO</li>
-          <li value="mt">MT</li>
-          <li value="ne">NE</li>
-          <li value="nv">NV</li>
-          <li value="nh">NH</li>
-          <li value="nj">NJ</li>
-          <li value="nm">NM</li>
-          <li value="ny">NY</li>
-          <li value="nc">NC</li>
-          <li value="nd">ND</li>
-          <li value="oh">OH</li>
-          <li value="ok">OK</li>
-          <li value="or">OR</li>
-          <li value="pa">PA</li>
-          <li value="pr">PR</li>
-          <li value="ri">RI</li>
-          <li value="sc">SC</li>
-          <li value="sd">SD</li>
-          <li value="tn">TN</li>
-          <li value="tx">TX</li>
-          <li value="ut">UT</li>
-          <li value="vt">VT</li>
-          <li value="va">VA</li>
-          <li value="wa">WA</li>
-          <li value="wv">WV</li>
-          <li value="wi">WI</li>
-          <li value="wy">WY</li>
+          <li>AL</li>
+          <li>AK</li>
+          <li>AZ</li>
+          <li>AR</li>
+          <li>CA</li>
+          <li>CO</li>
+          <li>CT</li>
+          <li>DE</li>
+          <li>DC</li>
+          <li>FL</li>
+          <li>GA</li>
+          <li>HI</li>
+          <li>ID</li>
+          <li>IL</li>
+          <li>IN</li>
+          <li>IA</li>
+          <li>KS</li>
+          <li>KY</li>
+          <li>LA</li>
+          <li>ME</li>
+          <li>MD</li>
+          <li>MA</li>
+          <li>MI</li>
+          <li>MN</li>
+          <li>MS</li>
+          <li>MO</li>
+          <li>MT</li>
+          <li>NE</li>
+          <li>NV</li>
+          <li>NH</li>
+          <li>NJ</li>
+          <li>NM</li>
+          <li>NY</li>
+          <li>NC</li>
+          <li>ND</li>
+          <li>OH</li>
+          <li>OK</li>
+          <li>OR</li>
+          <li>PA</li>
+          <li>PR</li>
+          <li>RI</li>
+          <li>SC</li>
+          <li>SD</li>
+          <li>TN</li>
+          <li>TX</li>
+          <li>UT</li>
+          <li>VT</li>
+          <li>VA</li>
+          <li>WA</li>
+          <li>WV</li>
+          <li>WI</li>
+          <li>WY</li>
         </ul>
       </div>
 
       <div class="center input-field col s6">
         <!-- useLocation trigger -->
-        <button class="waves-effect brown waves-light btn-large" id="useMyLoc">By location</button>
+        <button type ="button" onclick="showPosition();" class="waves-effect brown waves-light btn-large" id="useMyLoc">By location</button>
+        <div class="center input-field col s6" id="map-results" style="width: 250px; height: 250px; margin: 0 auto;"></div>
       </div>
     </div>
   </div>
@@ -105,12 +106,11 @@
           </div>
         </div>
       </div>
-
      
         <div class="container">
           <!-- MAP RESULTS GO HERE -->
-       <div id="map-results">
-       </div>
+          <div id="map-results">
+          </div>
       </div>
 
       <!-- Close div for bgPhoto        -->
